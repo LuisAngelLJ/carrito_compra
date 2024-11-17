@@ -1,0 +1,8 @@
+<div>
+    <!--la referencia nos servira para saber cuando el elemento es renderizado y a este elemento aplicarle propiedades que necesitamos-->
+    <div #wave></div>
+    <button (click)="playPause()">
+        <span *ngIf="!isPlaying()">Play</span>
+        <span *ngIf="isPlaying()">Pause</span>
+    </button>
+</div>
